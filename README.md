@@ -1,6 +1,6 @@
 ## About
 
-GitHub is the Google Drive for developers. We'll store everything we need for the project here.
+GitHub is the Google Drive for developers. We'll store everything we need for the project here. Click the image under **shared resources** to get started!
 
 
 ### Shared Resources
