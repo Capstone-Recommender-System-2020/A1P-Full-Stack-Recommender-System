@@ -8,4 +8,4 @@ Starting to track work hours
 Mon 10/12 - 9:58 - 11:30 - assist Valerie and update steps
 Fri 3:40 -    set up branch and merge guide and looking into project management via github
 
-testing new branch
+Testing new branch
