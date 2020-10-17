@@ -4,6 +4,7 @@ GitHub is the Google Drive for developers. We'll store everything we need for th
 
 
 ### Shared Resources
+There are four phases in the walkthrough thus far. Click the image below to access them all. When I add new phases, I will alert everyone.
 
 [![Walkthrough](group_assets/GitHub_Intro.png "GitHub Walkthrough")](https://www.notion.so/trentonimoore/Intro-To-GitHub-e972a223ac684ed2933d821c9dbc0f0f)
 
