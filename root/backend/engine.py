@@ -3,7 +3,7 @@
 
 We need a connection to the data so we can then run the data through the
 algorithm
-
+arts_data = Should connect to a db with all events.
 """
 """
 This algorithm will recommend events based on their attributes similarity
@@ -58,7 +58,7 @@ for i in range(len(arts_data.index)):
     #each event i, is appended to event list, which allows us to iterate through it below...
     event_list.append(event)
         
-        #here we iterate through the event's list created above.
+#here we iterate through the event's list created above.
 for event in event_list:
     
     print(event.id)
