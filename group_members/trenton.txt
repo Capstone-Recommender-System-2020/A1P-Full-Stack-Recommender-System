@@ -11,4 +11,12 @@ Fri 3:40 - 8   set up branch and merge guide and looking into project management
 Testing new branch
 testing again
 
-10/23 3:50 -  
+10/23 3:50pm - 8:15
+10/25 8:30AM - 
+
+Clarify
+Docker
+Heroku hosting
+3 algorithms
+Postgres python connection
+
