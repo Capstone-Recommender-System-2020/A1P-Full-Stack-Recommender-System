@@ -2,8 +2,13 @@
 
 GitHub is the Google Drive for developers. We'll store everything we need for the project here. Click the image under **shared resources** to get started!
 
+## Tech Stack Resources
+Use this to access walkthroughs or documentation
 
-### Shared Resources
+- **Django:** https://www.notion.so/trentonimoore/Django-0bf30cd2607a46b281af68ae3a6f61c4
+
+
+### Intro to GitHub
 There are four phases in the walkthrough thus far. Click the image below to access them all. When I add new phases, I will alert everyone.
 
 [![Walkthrough](group_assets/GitHub_Intro.png "GitHub Walkthrough")](https://www.notion.so/trentonimoore/Intro-To-GitHub-e972a223ac684ed2933d821c9dbc0f0f)
