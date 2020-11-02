@@ -1,12 +1,47 @@
 
-"""
+# Example python program to read data from a PostgreSQL table
 
-We need a connection to the data so we can then run the data through the
-algorithm
-arts_data = Should connect to a db with all events.
+# and load into a pandas DataFrame
+def create_connection():
+    import psycopg2
+
+    import pandas as pd
+
+    from sqlalchemy import create_engine
+
+
+
+    # Create an engine instance
+
+    postgres_Engine   = create_engine('postgresql+psycopg2://postgres:@127.0.0.1', pool_recycle=3600);
+
+
+
+    # Connect to PostgreSQL server
+
+    dbConnection    = postgres_Engine.connect();
+
+
+
+    # Read data from PostgreSQL database table and load into a DataFrame instance
+
+    arts_data       = pd.read_sql("select * from \"arts_data\"", dbConnection);
+
+
+
+    pd.set_option('display.expand_frame_repr', False);
+
+
+
+    # Close the database connection
+
+    dbConnection.close();
+     # return the DataFrame
+
+    return(arts_data);
+
 """
-"""
-This algorithm will recommend events based on their attributes similarity
+This algorithm will recommend events based on the percentage of similar attributes.
 """
 
 
@@ -87,3 +122,4 @@ for event in event_list:
     # The code below creates a column for each event and adds it's most 5 similar events and their scores
     # as the column value.
     print(event.most_similar_events)
+
