@@ -9,21 +9,22 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 def create_connection():
+    
     # Create an engine instance
     
-    postgres_Engine  = create_engine('postgresql+psycopg2://postgres:@127.0.0.1', pool_recycle=3600)
+    postgres_Engine   = create_engine('postgresql+psycopg2://postgres:@127.0.0.1', pool_recycle=3600)
 
 
 
     # Connect to PostgreSQL server
 
-    dbConnection = postgres_Engine.connect()
+    dbConnection    = postgres_Engine.connect()
 
 
 
     # Read data from PostgreSQL database table and load into a DataFrame instance
 
-    arts_data = pd.read_sql("select * from \"arts_data\"", dbConnection)
+    arts_data       = pd.read_sql("select * from \"arts_data\"", dbConnection)
 
 
 
@@ -35,7 +36,7 @@ def create_connection():
 
     dbConnection.close()
      # return the DataFrame
-    print(type(arts_data))
+
     return(arts_data)
 
 """
@@ -54,7 +55,7 @@ class Event(object):
         self.most_similar_events = {}
         
 
-
+arts_data = create_connection()
 
 def compare_attributes(arts_data):
     event_list = []
@@ -126,6 +127,5 @@ def compare_attributes(arts_data):
             # as the column value.
             print(event.most_similar_events)
     
-arts_data = create_connection()
 show_scores = compare_attributes(arts_data)
 
