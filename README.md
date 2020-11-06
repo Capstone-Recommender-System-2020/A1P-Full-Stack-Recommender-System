@@ -16,6 +16,7 @@ There are four phases in the walkthrough thus far. Click the image below to acce
 ## Links
 - **ERD:** https://lucid.app/lucidchart/cb587084-defb-4ab4-96ab-adabfe6e5700/edit?shared=true&page=0_0#?folder_id=home&browser=icon
 - **Roles:** https://docs.google.com/document/d/1aWmZIIXD664cktpzpXwQIx641yGpeTs1AgT1bxnicq8/edit
+- **Wireframe/Framework:** https://www.figma.com/file/9QLVfP4C7bNXbUbde7IAun/Wireframes-ARTSOnepass?node-id=0%3A1
 
 ## GitHub Tips
 - **Mastering Markdown:** https://guides.github.com/features/mastering-markdown/
