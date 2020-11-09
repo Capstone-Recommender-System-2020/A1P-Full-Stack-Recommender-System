@@ -38,10 +38,6 @@ def create_connection():
 
     return(arts_data)
 
-"""
-This algorithm will recommend events based on the percentage of similar attributes.
-"""
-
 
 class Event(object):
     def __init__(self):
@@ -52,11 +48,14 @@ class Event(object):
         self.id = None
         self.similarity_scores = {}
         self.most_similar_events = {}
-        
 
 
-
-def compare_attributes(arts_dat, event_id):
+def generate_similarity_scores(arts_data):
+    """
+    Goes through database and finds similatrity scores for each event
+    :return: list of event objects
+    type: list
+    """
     event_list = []
     for i in range(len(arts_data.index)):
 
@@ -98,50 +97,50 @@ def compare_attributes(arts_dat, event_id):
 
         # each event i, is appended to event list, which allows us to iterate through it below...
         event_list.append(event)
+    return event_list
 
-
+def compare_attributes(event_list, event_id):
+    """
+    This function gets the top 5 similar events and their scores
+    Returns: A Dataframe object with 5 events and their 5 scores as related
+    to the event_id passed in.
+    """
         # here we iterate through the event's list created above.
         for event in event_list:
             if event.id == event_id:
-                
-                print("event id match" + event.id)
                 column_names = ["Event ID", "Similarity Score"]
-                print("establishing data frame...")
                 data_frame = pd.DataFrame(columns = column_names)
                 data_frame['Event ID']= [None, None, None, None, None]
                 data_frame['Similarity Score'] = [0,0,0,0,0]
-                print("data frame established.")
+                scores = 0
+                while scores < 5:
+                    key = list(event.similarity_scores)[scores]
+                    event.most_similar_events[key] = event.similarity_scores[key]
+                    scores+=1
+                    
+                    #Iterate through list of similarity scores and compare to the 5
+                    #keep highest value
+                for sim_score in event.similarity_scores:
+                    lowest_value = 0
+                    lowest_key = 0
+                    for event_tuple in event.most_similar_events.items():
+                        if event_tuple[1] > lowest_value:
+                            lowest_value = event_tuple[1]
+                            lowest_key = event_tuple[0]
+                    if event.similarity_scores[sim_score] > lowest_value:
+                        event.most_similar_events.pop(lowest_key)
+                        event.most_similar_events[sim_score] = event.similarity_scores[sim_score]
                 
-                # looping through event similarity scores
-                # CURRENT SCORE
-                for score in event.similarity_scores:
-                    current_count = 0
-                    print(event.similarity_scores)
-                    # if the current event doesnt have any 5 scores, it will keep adding to the list until there
-                    # are 5.
-                    desired_num_results = 5
-                    if len(event.most_similar_events.items()) < desired_num_results:
-                        event.most_similar_events[score] = event.similarity_scores[score]
-                        # the else statement below replaces the lowest similarity score from the
-                        # list above, with the current value if it's higher.
-                    else:
-                        # here, find lowest score in most similar event's dictionary then compare that
-                        # score with the current score, if the score is higher, replace that.
+                current_count=0
+                for key,value in event.most_similar_events.items():
+                    data_frame['Event ID'][current_count] = key
+                    data_frame['Similarity Score'][current_count] = event.most_similar_events[key]
+                    current_count+=1
+                    
+                    
+                return data_frame
 
-                        for key in event.most_similar_events.keys():
-                            if event.similarity_scores[score] > event.most_similar_events[key]:
-                                event.most_similar_events[score] = event.similarity_scores[score]
-                                event.most_similar_events.pop(key)
-                                break
-                # The code below creates a column for each event and adds it's most 5 similar events and their scores
-                # as the column value.
-                            while current_count < desired_num_results:
-                                data_frame['Event ID'][current_count] = event.most_similar_events[key]
-                                data_frame['Similarity Score'][current_count] = event.similarity_scores[score]
-                                current_count+=1
-                                data_frame
-                                return data_frame
 
 arts_data = create_connection()
-df = compare_attributes(arts_data, '0911177464c463b3fcce005666f13352')
-df.head()
+event_list = generate_similarity_scores(arts_data)
+df = compare_attributes(event_list, '0911177464c463b3fcce005666f13352')
