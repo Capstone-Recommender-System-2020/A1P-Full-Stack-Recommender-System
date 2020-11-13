@@ -13,6 +13,7 @@ Use this to access walkthroughs or documentation
 - **Frontend Editing Tools:** 
     - https://www.youtube.com/watch?v=iyb9-eqQoMc
     - https://www.youtube.com/watch?v=rH1RTwaAeGc
+    - Examples of topics in HTML and CSS: https://github.com/gotrenton/Frontend-Practice-Projects
 
 ### Intro to GitHub and Visual Studio Walkthrough
 
