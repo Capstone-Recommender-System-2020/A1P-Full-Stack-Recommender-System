@@ -10,6 +10,9 @@ Use this to access walkthroughs or documentation
 - **Axios :** https://www.npmjs.com/package/axios
 - **Authentication :** https://docs.djangoproject.com/en/3.1/topics/auth/
 - **Heroku :** https://www.heroku.com/postgres
+- **Frontend Editing Tools:** 
+    - https://www.youtube.com/watch?v=iyb9-eqQoMc
+    - https://www.youtube.com/watch?v=rH1RTwaAeGc
 
 ### Intro to GitHub and Visual Studio Walkthrough
 
