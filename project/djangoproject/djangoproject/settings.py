@@ -72,9 +72,9 @@ TEMPLATES = [
     },
 ]
 
-TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, 'templates'),
-)  # added when troubleshooting templates
+#TEMPLATE_DIRS = (
+#    os.path.join(BASE_DIR, 'templates'),
+#)  # added when troubleshooting templates
 
 WSGI_APPLICATION = 'djangoproject.wsgi.application'
 
