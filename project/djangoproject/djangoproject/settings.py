@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'djangoapp.apps.DjangoappConfig', #define the django app
+    'djangoapp.apps.DjangoappConfig',  # define the django app
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -71,6 +71,10 @@ TEMPLATES = [
         },
     },
 ]
+
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'templates'),
+)  # added when troubleshooting templates
 
 WSGI_APPLICATION = 'djangoproject.wsgi.application'
 
