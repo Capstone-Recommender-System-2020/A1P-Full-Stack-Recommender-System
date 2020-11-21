@@ -10,4 +10,3 @@
 - Click on “Restore”
 
 The new database will now contain the tables and data that are necessary for the Django app.
-
