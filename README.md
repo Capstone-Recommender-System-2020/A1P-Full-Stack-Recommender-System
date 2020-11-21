@@ -10,3 +10,21 @@
 - Click on “Restore”
 
 The new database will now contain the tables and data that are necessary for the Django app.
+
+
+**REQUIREMENTS & TECH STACK**
+- see requirements.txt for a list of packages to install
+
+**Stack**
+- Django
+- React
+- Postgresql
+
+
+**FILE TREE**
+- djangoproject
+  - djangoproject (Admin tools)
+  - djangoapp (API)
+  - reactapp (front-end)
+
+
