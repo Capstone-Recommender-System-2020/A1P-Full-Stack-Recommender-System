@@ -22,4 +22,3 @@ pandas
 scikit-learn
 joblib
 gunicorn
-
