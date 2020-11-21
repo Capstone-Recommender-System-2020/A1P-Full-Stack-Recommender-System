@@ -8,12 +8,11 @@ Use this to access walkthroughs or documentation
 
 - **Django:** https://www.notion.so/trentonimoore/Django-0bf30cd2607a46b281af68ae3a6f61c4
 - **Axios :** https://www.npmjs.com/package/axios
-- **Authentication :** https://docs.djangoproject.com/en/3.1/topics/auth/
-- **Heroku :** https://www.heroku.com/postgres
-- **Frontend Editing Tools:** 
-    - https://www.youtube.com/watch?v=iyb9-eqQoMc
-    - https://www.youtube.com/watch?v=rH1RTwaAeGc
-    - Examples of topics in HTML and CSS: https://github.com/gotrenton/Frontend-Practice-Projects
+- **Authentication :** https://docs.djangoproject.com/en/3.1/topics/auth/- **Heroku:** https://www.heroku.com/postgres
+- **Frontend Editing Tools:**
+  - https://www.youtube.com/watch?v=iyb9-eqQoMc
+  - https://www.youtube.com/watch?v=rH1RTwaAeGc
+  - Examples of topics in HTML and CSS: https://github.com/gotrenton/Frontend-Practice-Projects
 
 ### Intro to GitHub and Visual Studio Walkthrough
 
