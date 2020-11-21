@@ -9,8 +9,7 @@ sqlparse
 
 
 #Trenton
-axios==
-
+axios
 
 #Krishnasai
 Django
