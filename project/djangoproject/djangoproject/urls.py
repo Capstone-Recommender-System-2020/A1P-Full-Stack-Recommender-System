@@ -14,11 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from django.views.generic import TemplateView  # importing templateview
+from django.urls import path  # importing templateview from react
+from django.views.generic import TemplateView
+from django.conf.urls import include  # from new repo
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # create path to template (the index file)
+    path('api/', include('djangoapp.urls')),
+    # create path to reactapp/build template (the index file)
     path('', TemplateView.as_view(template_name='index.html')),
 ]
