@@ -72,9 +72,9 @@ TEMPLATES = [
     },
 ]
 
-#TEMPLATE_DIRS = (
+# TEMPLATE_DIRS = (
 #    os.path.join(BASE_DIR, 'templates'),
-#)  # added when troubleshooting templates
+# )  # added when troubleshooting templates
 
 WSGI_APPLICATION = 'djangoproject.wsgi.application'
 
@@ -85,10 +85,11 @@ WSGI_APPLICATION = 'djangoproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',  # replace sqlite3 with postgres
-        'NAME': 'artsdb',  # replace this with our database name
+        'NAME': 'postgres',  # replace artsdb with postgres as database name
         'USER': 'postgres',  # add the username(postgres)
         'PASSWORD': '1234',  # add password
-        'HOST': 'localhost'  # add where it's being hosted
+        'HOST': 'localhost',  # add where it's being hosted
+        'PORT': '5432'
 
     }
 }
