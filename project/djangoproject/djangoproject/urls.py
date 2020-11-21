@@ -20,7 +20,7 @@ from django.conf.urls import include  # from new repo
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('djangoapp.urls'))
+    path('api/', include('djangoapp.urls')),
     # create path to reactapp/build template (the index file)
     path('', TemplateView.as_view(template_name='index.html')),
 ]
