@@ -22,8 +22,8 @@ The new database will now contain the tables and data that are necessary for the
 
 
 **FILE TREE**
-- djangoproject
-  - djangoproject (Admin tools)
+- djangoproject (app folder)
+  - djangoproject (admin tools)
   - djangoapp (API)
   - reactapp (front-end)
 
