@@ -1,8 +1,6 @@
-Ensure the following packages are installed
+#Ensure the following packages are installed
 
 asgiref
-Django
-django-cors-headers
 djangorestframework
 pytz
 sqlparse
