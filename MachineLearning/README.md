@@ -24,6 +24,12 @@ The new database will now contain the tables and data that are necessary for the
 
 **FILE TREE**
 
+**Primary**
+
+
+
+**Secondary**
+
 - MachineLearning (Project folder)
   - frontend (Front-end)
     - react_app (React app folder)
