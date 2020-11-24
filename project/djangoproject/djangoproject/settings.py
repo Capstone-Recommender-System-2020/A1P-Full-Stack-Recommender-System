@@ -84,7 +84,8 @@ WSGI_APPLICATION = 'djangoproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # replace sqlite3 with postgres
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'ENGINE': 'django.db.backends.postgresql',  # replace sqlite3 with postgres
         'NAME': 'postgres',  # replace artsdb with postgres as database name
         'USER': 'postgres',  # add the username(postgres)
         'PASSWORD': '1234',  # add password
