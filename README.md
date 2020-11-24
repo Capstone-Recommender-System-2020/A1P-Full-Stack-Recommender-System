@@ -7,7 +7,7 @@
       - main_new
         - Serves as another copy of the back-end
   - Final Recommender Engine (Back-up repository without the React app)
-~
+
 **FILE TREE**
 
 **Primary ("main" repository)**
@@ -25,7 +25,7 @@
   - djangoapp (Algorithm code and API)
   - djangoproject (Admin tools)
   - reactapp (Front-end)  
-~       
+      
 **HOW TO IMPORT THE DATABASE TO POSTGRESQL**
 
 **Pre-requisites:**
@@ -53,12 +53,12 @@ The new database will now contain the tables and data that are necessary for the
 - Postman (API Tester)
 - See requirements.txt for a list of packages to install
 - Here is an option to add sign up functionality: https://github.com/cornflourblue/react-signup-verification-boilerplate   
-~        
+       
  **ERRORS WE HAD RUN INTO**
 
  - We were running into a 500: Internal Server error when we were connecting the React page to Django
  - Everything on Github was working well on one of our team member's (Krishnasai Chalasani) local machine as he was able to successfully run the Django server, build connections with the APIs and test them on Postman, and run the React server, but when another person had cloned the "main" repository and tried it on his machine, he ran into some errors.
-~
+
 **RECOMMENDED NEXT STEPS**
 
 **GitHub**
@@ -76,7 +76,7 @@ The new database will now contain the tables and data that are necessary for the
 **Front-End (React)**
 1. Solve connection issues (500 error) with API for a sample React page
 2. Once you have solved the connection issues for the sample React page, connect each component of the ideal React app with APIs by adding “axios.get” functions to App.js for components on page
-~
+
 **HELPFUL INFORMATION**
 
 **Testing APIs in Postman**
