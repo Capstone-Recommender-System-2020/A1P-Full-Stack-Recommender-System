@@ -21,12 +21,11 @@ The new database will now contain the tables and data that are necessary for the
 - React
 - PostgreSQL
 - See requirements.txt for a list of packages to install
+- Here is an option to add sign up functionality: https://github.com/cornflourblue/react-signup-verification-boilerplate
 
 **FILE TREE**
 
 **Primary**
-
-
 
 **Secondary**
 
