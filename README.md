@@ -1,3 +1,5 @@
+Welcome to our recommender system project! Below is some very useful information on how to fully utilize our work:
+
 **What is in this GitHub project?**
 - Repositories
   - A1P-Full-Stack-Recommender-System (Main repository)
@@ -8,7 +10,7 @@
         - Serves as another copy of the back-end
   - Final Recommender Engine (Back-up repository without the React app)
 
-**FILE TREE**
+**FILE TREE:**
 
 **Primary ("main" repository)**
 - MachineLearning (Project folder)
@@ -26,7 +28,7 @@
   - djangoproject (Admin tools)
   - reactapp (Front-end)  
       
-**HOW TO IMPORT THE DATABASE TO POSTGRESQL**
+**HOW TO IMPORT THE DATABASE TO POSTGRESQL:**
 
 **Pre-requisites:**
 
@@ -54,12 +56,12 @@ The new database will now contain the tables and data that are necessary for the
 - See requirements.txt for a list of packages to install
 - Here is an option to add sign up functionality: https://github.com/cornflourblue/react-signup-verification-boilerplate   
        
- **ERRORS WE HAD RUN INTO**
+ **ERRORS WE HAD RUN INTO:**
 
  - We were running into a 500: Internal Server error when we were connecting the React page to Django
  - Everything on Github was working well on one of our team member's (Krishnasai Chalasani) local machine as he was able to successfully run the Django server, build connections with the APIs and test them on Postman, and run the React server, but when another person had cloned the "main" repository and tried it on his machine, he ran into some errors.
 
-**RECOMMENDED NEXT STEPS**
+**RECOMMENDED NEXT STEPS:**
 
 **GitHub**
 - Solve issues when cloning repository
