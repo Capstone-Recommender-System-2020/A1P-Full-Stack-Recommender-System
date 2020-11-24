@@ -4,10 +4,10 @@
 - Installed PostgreSQL and currently in pgAdmin4
 
 **Process for uploading database into PostgreSQL:**
-- Once in pgAdmin4, right click on “Databases” and create a new database
-- Once created, right-click on the newly created database and choose “Restore”
-- Use the file-path where the “PostgresDatabaseScript.sql” file is stored and place it in the “Filename” section
-- Click on “Restore”
+1. Once in pgAdmin4, right click on “Databases” and create a new database
+2. Once created, right-click on the newly created database and choose “Restore”
+3. Use the file-path where the “PostgresDatabaseScript.sql” file is stored and place it in the “Filename” section
+4. Click on “Restore”
 
 The new database will now contain the tables and data that are necessary for the Django app.
 
@@ -17,13 +17,17 @@ The new database will now contain the tables and data that are necessary for the
 **Stack**
 - Django
 - React
-- Postgresql
-- see requirements.txt for a list of packages to install
+- PostgreSQL
+- See requirements.txt for a list of packages to install
 
 **FILE TREE**
-- djangoproject (app folder)
-  - djangoproject (admin tools)
-  - djangoapp (API)
-  - reactapp (front-end)
+- MachineLearning (Project folder)
+  - frontend (Front-end)
+    - react_app (React app folder)
+  - Projects (Back-end)
+    - DjangoRestAPIDemo
+      - APIProjectFolder (Django app folder)
+        - APIProject (Admin tools)
+        - Prediction (Algorithm code and API)
 
 
