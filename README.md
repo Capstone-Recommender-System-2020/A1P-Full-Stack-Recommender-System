@@ -1,32 +1,78 @@
-## About
+**What is in this GitHub project?**
+- Repositories
+  - A1P-Full-Stack-Recommender-System (Main repository)
+    - Branches
+      - main
+        - Consists of 3 types of React app folders
+      - main_new
+        - Serves as another copy of the back-end
+  - Final Recommender Engine (Back-up repository without the React app)
 
-GitHub is the Google Drive for developers. We'll store everything we need for the project here. Click the links below to get started!
 
-## Tech Stack Resources & Walkthroughs
+**FILE TREE**
 
-Use this to access walkthroughs or documentation
+**Primary**
+- MachineLearning (Project folder)
+  - frontend (Front-end)
+    - react_app (React app folder)
+  - Projects (Back-end)
+    - DjangoRestAPIDemo
+      - APIProjectFolder (Django app folder)
+        - APIProject (Admin tools)
+        - Prediction (Algorithm code and API)
 
-- **Django:** https://www.notion.so/trentonimoore/Django-0bf30cd2607a46b281af68ae3a6f61c4
-- **Axios :** https://www.npmjs.com/package/axios
-- **Authentication :** https://docs.djangoproject.com/en/3.1/topics/auth/
-- **Heroku :** https://www.heroku.com/postgres
-- **Frontend Editing Tools:** 
-    - https://www.youtube.com/watch?v=iyb9-eqQoMc
-    - https://www.youtube.com/watch?v=rH1RTwaAeGc
-    - Examples of topics in HTML and CSS: https://github.com/gotrenton/Frontend-Practice-Projects
+**Secondary**
+- djangoproject (Project folder)
+  - djangoapp (Algorithm code and API)
+  - djangoproject (Admin tools)
+  - reactapp (Front-end)
 
-### Intro to GitHub and Visual Studio Walkthrough
+        
+        
+**HOW TO IMPORT THE DATABASE TO POSTGRESQL**
 
-There are four phases in the walkthrough thus far. Click the image below to access them all. When I add new phases, I will alert everyone.
+**Pre-requisites:**
 
-[![Walkthrough](group_assets/GitHub_Intro.png "GitHub Walkthrough")](https://www.notion.so/trentonimoore/Intro-To-GitHub-e972a223ac684ed2933d821c9dbc0f0f)
+- Installed PostgreSQL and currently in pgAdmin4
 
-## Links
+**Process for uploading database into PostgreSQL:**
 
-- **ERD:** https://lucid.app/lucidchart/cb587084-defb-4ab4-96ab-adabfe6e5700/edit?shared=true&page=0_0#?folder_id=home&browser=icon
-- **Roles:** https://docs.google.com/document/d/1aWmZIIXD664cktpzpXwQIx641yGpeTs1AgT1bxnicq8/edit
-- **Wireframe/Framework:** https://www.figma.com/file/9QLVfP4C7bNXbUbde7IAun/Wireframes-ARTSOnepass?node-id=0%3A1
+1. Once in pgAdmin4, right click on “Databases” and create a new database
+2. Once created, right-click on the newly created database and choose “Restore”
+3. Use the file-path where the “PostgresDatabaseScript.sql” file is stored and place it in the “Filename” section
+4. Click on “Restore”
 
-## GitHub Tips
+The new database will now contain the tables and data that are necessary for the Django app.
 
-- **Mastering Markdown:** https://guides.github.com/features/mastering-markdown/
+
+**REQUIREMENTS & TECH STACK**
+
+**Stack**
+
+- Django
+- React
+- PostgreSQL
+- See requirements.txt for a list of packages to install
+- Here is an option to add sign up functionality: https://github.com/cornflourblue/react-signup-verification-boilerplate
+        
+        
+ **ERRORS WE HAD RUN INTO**
+
+ - We were running into a 500: Internal Server error when we were connecting the React page to Django
+ - Everything on Github was working well on one of our team member's (Krishnasai Chalasani) local machine, but when another person had cloned this repository and tried it on his machine, he ran into some errors.
+
+
+**RECOMMENDED NEXT STEPS**
+
+**Application**
+- Dockerize the Django and React app: https://medium.com/@gagansh7171/dockerize-your-django-and-react-app-68a7b73ab6e9
+
+**Database**
+1. Set up PostgreSQL database on Heroku or AWS Relational Database Service (RDS) to make the database remote:
+  - Heroku: https://www.heroku.com/postgres
+  - AWS RDS: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-on-premises-postgresql-database-to-amazon-rds-for-postgresql.html
+2. Once done, change settings.py in Django under “Databases” to connect to remote database instead of local database
+
+**Front-End (React)**
+- Solve connection issues (500 error) with API for a sample React page
+- Once you have solved the connection issues for the sample React page, connect each component of the ideal React app with APIs by adding “axios.get” functions to App.js for components on page
