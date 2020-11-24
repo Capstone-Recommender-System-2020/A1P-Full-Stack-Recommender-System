@@ -17,13 +17,17 @@ The new database will now contain the tables and data that are necessary for the
 **Stack**
 - Django
 - React
-- Postgresql
+- PostgreSQL
 - see requirements.txt for a list of packages to install
 
 **FILE TREE**
-- djangoproject (app folder)
-  - djangoproject (admin tools)
-  - djangoapp (API)
-  - reactapp (front-end)
+- MachineLearning (Project folder)
+  - frontend (Front-end)
+    - react_app (React app folder)
+  - Projects (Back-end)
+    - DjangoRestAPIDemo
+      - APIProjectFolder (Django app folder)
+        - APIProject (Admin tools)
+        - Prediction (Algorithm code and API)
 
 
