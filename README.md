@@ -8,6 +8,7 @@
         - Serves as another copy of the back-end
   - Final Recommender Engine (Back-up repository without the React app)
 
+
 **FILE TREE**
 
 **Primary**
@@ -27,6 +28,7 @@
   - reactapp (Front-end)
 
         
+        
 **HOW TO IMPORT THE DATABASE TO POSTGRESQL**
 
 **Pre-requisites:**
@@ -42,6 +44,7 @@
 
 The new database will now contain the tables and data that are necessary for the Django app.
 
+
 **REQUIREMENTS & TECH STACK**
 
 **Stack**
@@ -52,12 +55,17 @@ The new database will now contain the tables and data that are necessary for the
 - See requirements.txt for a list of packages to install
 - Here is an option to add sign up functionality: https://github.com/cornflourblue/react-signup-verification-boilerplate
         
+        
  **ERRORS WE HAD RUN INTO**
 
  - We were running into a 500: Internal Server error when we were connecting the React page to Django
  - Everything on Github was working well on one of our team member's (Krishnasai Chalasani) local machine, but when another person had cloned this repository and tried it on his machine, he ran into some errors.
 
+
 **RECOMMENDED NEXT STEPS**
+
+**Application**
+- Dockerize the Django and React app: https://medium.com/@gagansh7171/dockerize-your-django-and-react-app-68a7b73ab6e9
 
 **Database**
 1. Set up PostgreSQL database on Heroku or AWS Relational Database Service (RDS) to make the database remote:
@@ -65,5 +73,6 @@ The new database will now contain the tables and data that are necessary for the
   - AWS RDS: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-on-premises-postgresql-database-to-amazon-rds-for-postgresql.html
 2. Once done, change settings.py in Django under “Databases” to connect to remote database instead of local database
 
-**Application**
-- Dockerize the Django and React app: https://medium.com/@gagansh7171/dockerize-your-django-and-react-app-68a7b73ab6e9
+**Front-End (React)**
+- Solve connection issues (500 error) with API for a sample React page
+- Once you have solved the connection issues for the sample React page, connect each component of the ideal React app with APIs by adding “axios.get” functions to App.js for components on page
