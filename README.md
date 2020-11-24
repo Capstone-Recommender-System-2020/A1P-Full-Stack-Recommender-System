@@ -1,29 +1,55 @@
 **HOW TO IMPORT THE DATABASE TO POSTGRESQL**
 
 **Pre-requisites:**
+
 - Installed PostgreSQL and currently in pgAdmin4
 
 **Process for uploading database into PostgreSQL:**
-- Once in pgAdmin4, right click on “Databases” and create a new database
-- Once created, right-click on the newly created database and choose “Restore”
-- Use the file-path where the “PostgresDatabaseScript.sql” file is stored and place it in the “Filename” section
-- Click on “Restore”
+
+1. Once in pgAdmin4, right click on “Databases” and create a new database
+2. Once created, right-click on the newly created database and choose “Restore”
+3. Use the file-path where the “PostgresDatabaseScript.sql” file is stored and place it in the “Filename” section
+4. Click on “Restore”
 
 The new database will now contain the tables and data that are necessary for the Django app.
-
 
 **REQUIREMENTS & TECH STACK**
 
 **Stack**
+
 - Django
 - React
-- Postgresql
-- see requirements.txt for a list of packages to install
+- PostgreSQL
+- See requirements.txt for a list of packages to install
+- Here is an option to add sign up functionality: https://github.com/cornflourblue/react-signup-verification-boilerplate
 
 **FILE TREE**
-- djangoproject (app folder)
-  - djangoproject (admin tools)
-  - djangoapp (API)
-  - reactapp (front-end)
 
+**Primary**
 
+**Secondary**
+
+- MachineLearning (Project folder)
+  - frontend (Front-end)
+    - react_app (React app folder)
+  - Projects (Back-end)
+    - DjangoRestAPIDemo
+      - APIProjectFolder (Django app folder)
+        - APIProject (Admin tools)
+        - Prediction (Algorithm code and API)
+        
+ **ERRORS WE HAD RUN INTO**
+
+ - We were running into a 500: Internal Server error when we were connecting the React page to Django
+ - Everything on Github was working well on one of our team member's local machine, but when another person had cloned this repository and tried it on his machine, he ran into some errors.
+
+**RECOMMENDED NEXT STEPS**
+
+**Database**
+1. Set up PostgreSQL database on Heroku or AWS Relational Database Service (RDS) to make the database remote:
+  - Heroku: https://www.heroku.com/postgres
+  - AWS RDS: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-on-premises-postgresql-database-to-amazon-rds-for-postgresql.html
+2. Once done, change settings.py in Django under “Databases” to connect to remote database instead of local database
+
+**Application**
+- Dockerize the Django and React app: https://medium.com/@gagansh7171/dockerize-your-django-and-react-app-68a7b73ab6e9
