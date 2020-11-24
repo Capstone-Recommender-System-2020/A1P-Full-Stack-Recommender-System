@@ -1,3 +1,32 @@
+**What is in this GitHub project?**
+- Repositories
+  - A1P-Full-Stack-Recommender-System (Main repository)
+    - Branches
+      - main
+        - Consists of 3 types of React app folders
+      - main_new
+        - Serves as another copy of the back-end
+  - Final Recommender Engine (Back-up repository without the React app)
+
+**FILE TREE**
+
+**Primary**
+- MachineLearning (Project folder)
+  - frontend (Front-end)
+    - react_app (React app folder)
+  - Projects (Back-end)
+    - DjangoRestAPIDemo
+      - APIProjectFolder (Django app folder)
+        - APIProject (Admin tools)
+        - Prediction (Algorithm code and API)
+
+**Secondary**
+- djangoproject (Project folder)
+  - djangoapp (Algorithm code and API)
+  - djangoproject (Admin tools)
+  - reactapp (Front-end)
+
+        
 **HOW TO IMPORT THE DATABASE TO POSTGRESQL**
 
 **Pre-requisites:**
@@ -22,26 +51,11 @@ The new database will now contain the tables and data that are necessary for the
 - PostgreSQL
 - See requirements.txt for a list of packages to install
 - Here is an option to add sign up functionality: https://github.com/cornflourblue/react-signup-verification-boilerplate
-
-**FILE TREE**
-
-**Primary**
-
-**Secondary**
-
-- MachineLearning (Project folder)
-  - frontend (Front-end)
-    - react_app (React app folder)
-  - Projects (Back-end)
-    - DjangoRestAPIDemo
-      - APIProjectFolder (Django app folder)
-        - APIProject (Admin tools)
-        - Prediction (Algorithm code and API)
         
  **ERRORS WE HAD RUN INTO**
 
  - We were running into a 500: Internal Server error when we were connecting the React page to Django
- - Everything on Github was working well on one of our team member's local machine, but when another person had cloned this repository and tried it on his machine, he ran into some errors.
+ - Everything on Github was working well on one of our team member's (Krishnasai Chalasani) local machine, but when another person had cloned this repository and tried it on his machine, he ran into some errors.
 
 **RECOMMENDED NEXT STEPS**
 
