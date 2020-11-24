@@ -109,6 +109,7 @@ The new database will now contain the tables and data that are necessary for the
 1. Go to command line
 2. Navigate to file directory that contains the "reactapp" folder
 3. Run this command: npm start
+4. You should see that the React page will pop up on your browser as a new tab
 
 **Installing packages through "requirements.txt"**
 1. Go to command line
