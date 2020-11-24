@@ -27,6 +27,8 @@ The new database will now contain the tables and data that are necessary for the
 
 **Primary**
 
+**Secondary**
+
 - MachineLearning (Project folder)
   - frontend (Front-end)
     - react_app (React app folder)
@@ -35,11 +37,19 @@ The new database will now contain the tables and data that are necessary for the
       - APIProjectFolder (Django app folder)
         - APIProject (Admin tools)
         - Prediction (Algorithm code and API)
-
-**Secondary**
-
         
  **ERRORS WE HAD RUN INTO**
 
  - We were running into a 500: Internal Server error when we were connecting the React page to Django
- - Everything on Github was working well on one of our team member's local machine, but when another person had cloned this repository and tried it on his machine, he ran into some errors. We did not have time to test whether docker could solve this problem, but we recommend taking that direction.
+ - Everything on Github was working well on one of our team member's local machine, but when another person had cloned this repository and tried it on his machine, he ran into some errors.
+
+**RECOMMENDED NEXT STEPS**
+
+**Database**
+1. Set up PostgreSQL database on Heroku or AWS Relational Database Service (RDS) to make the database remote:
+  - Heroku: https://www.heroku.com/postgres
+  - AWS RDS: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-on-premises-postgresql-database-to-amazon-rds-for-postgresql.html
+2. Once done, change settings.py in Django under “Databases” to connect to remote database instead of local database
+
+**Application**
+- Dockerize the Django and React app: https://medium.com/@gagansh7171/dockerize-your-django-and-react-app-68a7b73ab6e9
