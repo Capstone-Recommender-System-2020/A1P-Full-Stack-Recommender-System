@@ -1,0 +1,352 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.conthome {
+  margin: 0px 0px 0px 0px;
+}
+.headerrow {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 1349px;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(245, 244, 244, 0.911);
+}
+
+.recomheader {
+  margin-top: 5px;
+  margin-bottom: 12px;
+  width: 950px;
+}
+
+.discoveryheader {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  width: 970px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container {
+  align-content: center;
+  background-color: rosybrown;
+  border-radius: 25px;
+  display: flex;
+  margin-left: 0;
+}
+
+.container:hover .item {
+  transform: translateX(-25%);
+}
+
+.item:hover ~ .item {
+  transform: translateX(25%);
+}
+
+.item:hover {
+  transform: scale(1.5) !important;
+}
+
+.item {
+  flex: 0 0 19.7%;
+  align-content: center;
+  margin: 0 1px;
+  transition: transform 300ms ease 100ms;
+}
+
+.img {
+  border-radius: 25px;
+}
+
+.arrowbutton {
+  transform: rotateZ(90deg);
+}
+
+.et {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font-size: 15px;
+  text-align: center;
+  width: 160px;
+  height: 70px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: rosybrown;
+}
+
+.el {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font-size: 15px;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  font-size: 12px;
+  background-color: rosybrown;
+}
+
+.el7 {
+  margin-top: 0px;
+  margin-bottom: 70px;
+  font-size: 15px;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  font-size: 12px;
+  background-color: rosybrown;
+}
+
+.ep {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  text-align: center;
+  width: 160px;
+  height: 30px;
+  border-radius: 25px;
+  font-size: 12px;
+  background-color: rosybrown;
+}
+
+.sliderrow1 {
+  margin-left: 0px;
+  width: 200px;
+  outline: 1px solid black;
+}
+
+.sliderrow2 {
+  margin-left: 0px;
+  outline: 1px solid black;
+}
+
+.sliderrow3 {
+  margin-left: 0;
+  outline: 1px solid black;
+}
+
+.p {
+  line-height: 3;
+  margin-left: 0;
+  margin-top: 10 px;
+  margin-bottom: 5 px;
+}
+
+.rows {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.column1 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.column2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+  width: 1580px;
+  background-color: rgb(248, 248, 248);
+}
+
+.boxed {
+  margin-left: 0;
+  border: 2px solid black;
+}
+.shadowsharp {
+  border: 1px solid black;
+  box-shadow: 5px 6px #808080;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 1180px;
+}
+.watchedheader {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  width: 970px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.similarheader {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  width: 970px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.filterheader {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.dropdownrow {
+  width: 330px;
+  height: 190px;
+  margin-bottom: 10px;
+}
+.preferencelabel {
+  margin-top: 3px;
+  margin-bottom: 10px;
+  margin-left: 14px;
+  margin-right: 115px;
+}
+
+.dropdownmenu {
+  margin-top: 5px;
+  margin-left: 11px;
+  margin-bottom: 10px;
+}
+.checkboxpreference {
+  margin-top: 5px;
+  margin-left: 28px;
+  margin-right: 55px;
+  margin-bottom: 8px;
+}
+.submitbutton {
+  margin-left: 28px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.citycheckbox {
+  width: 330px;
+  margin-bottom: 30px;
+  outline: 1px solid black;
+}
+.citycheckaddi {
+  margin-left: 4px;
+}
+
+.citycheckallen {
+  margin-left: 4px;
+}
+
+.citycheckdallas {
+  margin-left: 4px;
+}
+
+.citycheckdent {
+  margin-left: 4px;
+}
+
+.citycheckdunc {
+  margin-left: 4px;
+}
+
+.citycheckftw {
+  margin-left: 4px;
+}
+
+.citycheckfris {
+  margin-left: 4px;
+}
+
+.citycheckmcki {
+  margin-left: 4px;
+}
+
+.citycheckrich {
+  margin-left: 4px;
+}
+
+.citycheckwaco {
+  margin-left: 4px;
+}
+
+.pricecheckbox {
+  width: 170px;
+  margin-bottom: 30px;
+  outline: 1px solid black;
+}
+
+.pricecheckfree {
+  margin-left: 4px;
+  margin-right: 80px;
+}
+
+.pricecheck1-100 {
+  margin-left: 4px;
+  margin-right: 25px;
+}
+
+.pricecheck100-200 {
+  margin-left: 4px;
+}
+
+.pricecheck250above250 {
+  margin-left: 4px;
+}
+
+.button {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.groupbutton {
+  width: 315px;
+}
+
+.drumprofilerow {
+  margin-left: 4px;
+  margin-top: 20px;
+  width: 224px;
+  outline: 1px solid black;
+}
+
+.drumspic {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  height: 40px;
+  width: 40px;
+}
+
+.drumbox {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  height: 20px;
+  width: 124px;
+}
+
+.fluteprofilerow {
+  margin-top: 10px;
+  width: 224px;
+  outline: 1px solid black;
+}
+
+.flutepic {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  height: 40px;
+  width: 40px;
+}
+
+.flutebox {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 10px;
+  width: 122px;
+}

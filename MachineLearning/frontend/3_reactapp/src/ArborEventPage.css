@@ -1,0 +1,86 @@
+.arborheader {
+  text-align: center;
+  background-color: rosybrown;
+  margin-bottom: 15px;
+}
+
+.arborpicrow {
+  margin-top: 5px;
+}
+
+.arborcol {
+  align-content: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.arborpic {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 330px;
+  height: 320px;
+  margin-left: 130px;
+}
+
+.escol {
+  margin-top: 15px;
+}
+
+.schedule {
+  margin-top: 25px;
+  margin-left: 150px;
+  width: 310px;
+  height: 180px;
+  border: 2px solid black;
+  background-color: whitesmoke;
+  align-content: center;
+}
+
+.map {
+  width: 40px;
+  height: 20;
+  margin-bottom: 25px;
+  margin-left: 100px;
+}
+
+.sugheaderrow {
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 1250px;
+  height: 70px;
+}
+
+.arborsliderrow {
+  margin-left: 0px;
+  width: 1250px;
+  border: 2px solid green;
+}
+
+.containerar {
+  align-content: center;
+  background-color: rosybrown;
+  border-radius: 25px;
+  width: 1250px;
+  display: flex;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.container:hover .item {
+  transform: translateX(-25%);
+}
+
+.item:hover ~ .item {
+  transform: translateX(25%);
+}
+
+.item:hover {
+  transform: scale(1.5) !important;
+}
+
+.item {
+  flex: 0 0 19.7%;
+  align-content: center;
+  margin: 0 2px;
+  transition: transform 300ms ease 100ms;
+}
