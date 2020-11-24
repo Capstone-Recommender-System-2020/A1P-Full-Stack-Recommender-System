@@ -18,7 +18,7 @@ The new database will now contain the tables and data that are necessary for the
 - Django
 - React
 - PostgreSQL
-- see requirements.txt for a list of packages to install
+- See requirements.txt for a list of packages to install
 
 **FILE TREE**
 - MachineLearning (Project folder)
