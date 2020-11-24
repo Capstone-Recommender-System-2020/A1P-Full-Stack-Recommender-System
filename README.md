@@ -36,7 +36,7 @@ Welcome to our recommender system project! Below is some very useful information
 
 **Process for uploading database into PostgreSQL:**
 
-1. Once in pgAdmin4, right click on “Databases” and create a new database
+1. Once in pgAdmin4, right click on “Databases” and create a new database (Make sure to have the database name, username, and password all initially set to "postgres")
 2. Once created, right-click on the newly created database and choose “Restore”
 3. Use the file-path where the “PostgresDatabaseScript.sql” file is stored and place it in the “Filename” section
 4. Click on “Restore”
