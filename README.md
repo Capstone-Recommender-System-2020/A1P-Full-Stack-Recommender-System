@@ -4,10 +4,10 @@
 - Installed PostgreSQL and currently in pgAdmin4
 
 **Process for uploading database into PostgreSQL:**
-- Once in pgAdmin4, right click on “Databases” and create a new database
-- Once created, right-click on the newly created database and choose “Restore”
-- Use the file-path where the “PostgresDatabaseScript.sql” file is stored and place it in the “Filename” section
-- Click on “Restore”
+1. Once in pgAdmin4, right click on “Databases” and create a new database
+2. Once created, right-click on the newly created database and choose “Restore”
+3. Use the file-path where the “PostgresDatabaseScript.sql” file is stored and place it in the “Filename” section
+4. Click on “Restore”
 
 The new database will now contain the tables and data that are necessary for the Django app.
 
